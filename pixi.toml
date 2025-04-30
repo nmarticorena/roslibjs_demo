@@ -1,0 +1,14 @@
+[project]
+channels = ["conda-forge","robostack-humble"]
+name = "roslibjs_demo"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+example="ros2 launch example.launch.py"
+
+
+[dependencies]
+ros-humble-desktop = ">=0.10.0,<0.11"
+ros-humble-rosbridge-server = ">=2.0.0,<3"
+ros-humble-rosbridge-suite = ">=2.0.0,<3"
