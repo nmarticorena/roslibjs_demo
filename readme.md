@@ -17,7 +17,7 @@ powershell -ExecutionPolicy ByPass -c "irm -useb https://pixi.sh/install.ps1 | i
 ## Running the demo
 
 ### ros2wasm launch
-First to launch the ros2wasm jupyter-lite demo you just need to open the following website: https://nmarticorena.github.io/pixi-wasm and run the first to cells setting ROSLIBS_ENABLE to 1
+First to launch the ros2wasm jupyter-lite demo you just need to open the following website: https://ros2wasm.github.io/jupyter-lite and run the first to cells setting ROSLIBS_ENABLE to 1
 
 ### Launching native ros2 node
 Thanks to pixi you just need to launch the following command on this directory

@@ -14,8 +14,7 @@ website = "detach xdg-open https://nmarticorena.github.io/pixi-wasm"
 website = "start https://nmarticorena.github.io/pixi-wasm"
 
 [tasks]
-launch="ros2 launch example.launch.py"
-demo = "pixi run website && pixi run launch"
+demo="ros2 launch example.launch.py"
 
 [dependencies]
 ros-humble-desktop = ">=0.10.0,<0.11"
