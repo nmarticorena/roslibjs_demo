@@ -5,13 +5,13 @@ platforms = ["linux-64","osx-64","win-64"]
 version = "0.1.0"
 
 [target.osx-64.tasks]
-website="open https://nmarticorena.github.io/pixi-wasm"
+website="open https://ros2wasm.dev/pages/demo06/index.html"
 
 [target.linux-64.tasks]
-website = "detach xdg-open https://nmarticorena.github.io/pixi-wasm"
+website = "xdg-open https://ros2wasm.dev/pages/demo06/index.html"
 
 [target.win-64.tasks]
-website = "start https://nmarticorena.github.io/pixi-wasm"
+website = "start https://ros2wasm.dev/pages/demo06/index.html"
 
 [tasks]
 demo="ros2 launch example.launch.py"
