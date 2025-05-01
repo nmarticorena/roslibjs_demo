@@ -1,12 +1,21 @@
 [project]
 channels = ["conda-forge","robostack-humble"]
 name = "roslibjs_demo"
-platforms = ["linux-64"]
+platforms = ["linux-64","osx-64","win-64"]
 version = "0.1.0"
 
-[tasks]
-example="ros2 launch example.launch.py"
+[target.osx-64.tasks]
+website="open https://nmarticorena.github.io/pixi-wasm"
 
+[target.linux-64.tasks]
+website = "detach xdg-open https://nmarticorena.github.io/pixi-wasm"
+
+[target.win-64.tasks]
+website = "start https://nmarticorena.github.io/pixi-wasm"
+
+[tasks]
+launch="ros2 launch example.launch.py"
+demo = "pixi run website && pixi run launch"
 
 [dependencies]
 ros-humble-desktop = ">=0.10.0,<0.11"
