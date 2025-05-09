@@ -1,7 +1,7 @@
 [project]
 channels = ["conda-forge","robostack-humble"]
 name = "roslibjs_demo"
-platforms = ["linux-64","osx-64","win-64"]
+platforms = ["linux-64","osx-64","osx-arm64","win-64"]
 version = "0.1.0"
 
 [target.osx-64.tasks]
